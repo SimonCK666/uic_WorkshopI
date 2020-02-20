@@ -1,0 +1,53 @@
+body {
+    background-color: pink;
+    padding: 25px;
+}
+p {
+    color: #ffffff;
+}
+
+#para1 {
+    background-color: #ff00ff;
+}
+
+/*  for headers */
+#myheader1 {
+    color: maroon;
+    margin-left: 40px;
+}
+
+#divBlock {
+    background-color: #28b366;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+
+#divBlock2 {
+    position: relative;
+    clear: both;
+    background-color: #c2e24c;
+    height: 100px;
+    width: 600px;
+    padding-top: 10px;
+    border-style: solid;
+    border-color: #a8330f;
+}
+
+#moreText {
+    float: left;
+    width: 40%;
+    height: 100px;
+    background-color: #64e09c;
+    height: 100px;
+}
+
+.spanid {
+    color: orange;
+    font-size: 50px;
+}
+
+.paragraph {
+    font-size: 20px;
+}
+
