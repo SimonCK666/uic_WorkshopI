@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        padding-top: 10px;
+    }
+</style>
+<body>
+    <div>
+        1st Number <input type="number" id="col1" value="">
+    </div>
+    
+    <div>
+        2cd Number <input type="number" id="col2" value="">
+    </div>
+
+    <button id="btn" onclick="demo()">Try</button>
+
+
+    <p>Added</p>
+    <p id="row1"></p>
+
+    <p>Multiply</p>
+    <p id="row2"></p>
+
+    <p>Subtract</p>
+    <p id="row3"></p>
+
+
+    <p>Divide</p>
+    <p id="row4"></p>
+
+
+    <script>
+        function demo() {
+            var a = document.getElementById("col1").value;
+            var b = document.getElementById("col2").value;
+            add(a,b);
+            mult(a,b);
+            sub(a,b);
+            divd(a,b);
+        }
+        
+
+        function add(a,b) {
+            document.getElementById("row1").innerHTML =  parseInt(a) + parseInt(b);
+        }
+
+        function mult(a,b) {
+            document.getElementById("row2").innerHTML = parseInt(a) - parseInt(b);
+        }
+
+        function sub(a,b) {
+            document.getElementById("row3").innerHTML = parseInt(a) * parseInt(b);
+        }
+
+        function divd(a,b) {
+            document.getElementById("row4").innerHTML = parseInt(a) / parseInt(b);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        width: 300px;
+        height: 400px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: greenyellow;
+    }
+    #col {
+        padding-top: 15px;
+    }
+    #result {
+        width: 300px;
+        height: 400px;
+        padding-left: 20px;
+        border-style: solid;
+        border-color: greenyellow;
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="header">
+            <h2>Club Register</h2>
+        </div>
+        <div class="formAll">
+            <form action="" id="formClub">
+                <div id="col">
+                    Enter your First name: <input type="text" id="col1" onfocus = "submit1()">
+                </div>
+                <div id="col">
+                    Enter your Last name: <input type="text" id="col2" onfocus="submit2()">
+                </div>
+                <div id="col">
+                    Enter your mobile Number: <input type="text" id="col3" onfocus="submit3()">
+                </div>
+                <div id="col">
+                    Year Grade
+                    <select id="selectList">
+                        <option value ="volvo">Year1</option>
+                        <option value ="saab">Year2</option>
+                        <option value="opel">Year3</option>
+                        <option value="audi">Year4</option>
+                    </select>
+                </div>
+                 <div id="col">
+                    Enter your Date birth: <input type="date" id="birth" value="">
+                 </div>
+            </form>
+            <button id="btn">Submit</button>
+        </div>
+    </div>
+    <div id="result">
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+    </div>
+    
+
+    <script>
+        function submit1() {
+            document.getElementById("demo").innerHTML = "Simon";
+        }
+
+        function submit2() {
+            document.getElementById("demo2").innerHTML = 'Yang';
+        }
+
+        function submit3() {
+            document.getElementById("demo3").innerHTML = 123456789;
+        }
+        
+        var x = document.getElementById("birth");
+        x.nodeValue = Date();
+    </script>
+</body>
+</html>
